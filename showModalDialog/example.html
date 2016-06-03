@@ -1,16 +1,73 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8" />
     <title></title>
-    <link rel="stylesheet" href="showModalDialog.css">
-    <script src="//code.jquery.com/jquery.js"></script>
+<!--
+Requirement:
+es6-promise, https://github.com/stefanpenner/es6-promise
+jQuery, https://github.com/jquery/jquery
+-->
+    <script src="es6-promise.min.js"></script>
+    <script src="jquery.min.js"></script>
     <script src="showModalDialog.js"></script>
+    <link rel="stylesheet" type='text/css' href="showModalDialog.css">
 </head>
 <body>
-
-</body>
 <script>
-    showModalDialog('dialog.html');
+  function show()
+  {
+    window.showModalDialog('dialog.html')
+    .then(function(result){
+        alert(result); // success
+      }, function(reason){
+        alert(reason); // failure
+      });
+  }
 </script>
+<input type=button onClick="javascript:show();" value="test">
+<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+content to enlarge page<br />
+</body>
 </html>
